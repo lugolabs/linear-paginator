@@ -2,13 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="CSS3 skins for jQuery UI datapicker" />
-	<meta property="twitter:card" content="summary"/>
-  <meta property="twitter:site" content="@GitHub">
-  <meta property="twitter:title" content="rtsinani/jquery-datepicker-skins"/>
 
 	<title>jquery-datepicker-skins :: CSS3 skins for jQuery UI datepicker</title>
-
+	<link rel="stylesheet" type="text/css" href="../linear_paginator.css">
 
 	<style rel="stylesheet">
 		body {
@@ -26,43 +22,7 @@
 			height: 20em;
 		}
 
-		.line-paginator {
-			text-align: center;
-			border-top: 1px solid #eee;
-			position: relative;
-		}
-
-		.line-paginator .line-paginator-top {
-			position: absolute;
-			top: -2px;
-			left: 0;
-			width: 4px;
-			height: 4px;
-			border-radius: 50%;
-			background: rgba(0,183,229,0.9);
-			/*border-top: 1px solid red;*/
-			transition: left .8s;
-
-			box-shadow: 0 0 13px #2187e7;
-		}
-
-		.line-paginator .line-paginator-pages a {
-			display: inline-block;
-			color: #ccc;
-			font-size: .9em;
-			text-decoration: none;
-			margin: -1px 0 0;
-			padding: 1em 1em 0;
-		}		
-
-		.line-paginator .line-paginator-pages a:hover,
-		.line-paginator .line-paginator-pages a.current {
-			color: #333;
-		}
-
-		.line-paginator .line-paginator-pages a.current {
-			cursor: default;
-		}
+		
 	</style>
 
 
@@ -76,17 +36,17 @@
 		<div class="line-paginator">
 			<div class="line-paginator-top"></div>
 			<div class="line-paginator-pages">
-				<a href="http://www.google.com">Previous</a>
-				<a href="http://www.google.com">1</a>
-				<a href="http://www.google.com">2</a>
-				<a href="http://www.google.com">3</a>
-				<a href="http://www.google.com">Next</a>
+				<a href="#prev">Previous</a>
+				<a href="#1">1</a>
+				<a href="#2">2</a>
+				<a href="#3">3</a>
+				<a href="#next">Next</a>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="../vendor/jquery-2.0.2.min.js"></script>
-	<script type="text/javascript" src="../line_paginator.js"></script>
+	<script type="text/javascript" src="../linear_paginator.js"></script>
 
 	<script type="text/javascript">
 		$('.line-paginator').linePaginator();
