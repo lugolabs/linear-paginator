@@ -9,17 +9,17 @@
 		}
 	};
 
-	var LinePaginator = function(element, options) {
+	var LinearPaginator = function(element, options) {
 		this._element    = $(element);
 		this._options    = $.extend({}, _defaults, options);
 		this._links      = this._element.find('a');
 		this._current    = null;
-		this._top        = this._element.find('.line-paginator-top');
+		this._top        = this._element.find('.linear-paginator-top');
 		this._topWidth   = this._top.width();
 		this._init();
 	};
 
-	LinePaginator.prototype = {
+	LinearPaginator.prototype = {
 
 		_init: function() {
 			this._current = this._links.eq(this._options.startIndex);
@@ -82,9 +82,9 @@
 
 	};
 
-	$.fn.linePaginator = function(options) {
+	$.fn.linearPaginator = function(options) {
 		this.each(function() {
-			new LinePaginator(this, options);
+			new LinearPaginator(this, options);
 			return this;
 		});
 	};

@@ -1,10 +1,10 @@
-.line-paginator {
+.linear-paginator {
 	text-align: center;
 	border-top: 1px solid #eee;
 	position: relative;
 }
 
-.line-paginator .line-paginator-top {
+.linear-paginator .linear-paginator-top {
 	position: absolute;
 	top: -2px;
 	left: 0;
@@ -12,13 +12,19 @@
 	height: 4px;
 	border-radius: 50%;
 	background: rgba(0,183,229,0.9);
-	/*border-top: 1px solid red;*/
 	transition: left .8s;
-
+	-webkit-transition: left .8s;
+	-moz-transition: left .8s;
+	-o-transition: left .8s;
+	-ms-transition: left .8s;
 	box-shadow: 0 0 13px #2187e7;
+	-webkit-box-shadow: 0 0 13px #2187e7;
+	-moz-box-shadow: 0 0 13px #2187e7;
+	-o-box-shadow: 0 0 13px #2187e7;
+	-ms-box-shadow: 0 0 13px #2187e7;
 }
 
-.line-paginator .line-paginator-pages a {
+.linear-paginator .linear-paginator-pages a {
 	display: inline-block;
 	color: #ccc;
 	font-size: .9em;
@@ -27,11 +33,11 @@
 	padding: 1em 1em 0;
 }		
 
-.line-paginator .line-paginator-pages a:hover,
-.line-paginator .line-paginator-pages a.current {
+.linear-paginator .linear-paginator-pages a:hover,
+.linear-paginator .linear-paginator-pages a.current {
 	color: #333;
 }
 
-.line-paginator .line-paginator-pages a.current {
+.linear-paginator .linear-paginator-pages a.current {
 	cursor: default;
 }
